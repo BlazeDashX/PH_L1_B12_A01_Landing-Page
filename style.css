@@ -218,3 +218,89 @@ body{
     text-align: center;
     margin-top: 0;
 }
+
+
+.feedback{
+    width: 80%;
+    margin: 80px auto;
+    padding: 60px 40px;
+    border-radius: 20px;
+}
+
+.feedback h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.feedback-card-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+}
+
+.feedback-card{
+    width: 30%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--cl-blue);
+}
+
+.feedback-card .rating{
+    display: flex;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+}
+
+.feedback-card .rating img{
+    width: 20px;
+    height: 20px;
+}
+
+.feedback-card-section h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: var();
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.feedback-card-section p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.feedback-card .user{
+    display: flex;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+    gap: 10px;
+    margin-top: 20px;
+}
+.feedback-card .user img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.feedback-card .user h4{
+    font-family: 'Raleway', sans-serif;
+    text-align: left;
+}
+.feedback-card .user p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: darkslategrey;
+    text-align: left;
+}
