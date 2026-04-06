@@ -1,0 +1,46 @@
+:root{
+    --cl-black: #2f2d3b;
+    --cl-gray: #6768ab;
+    --cl-purple: #5e4d9b;
+    --cl-light-purple: #9389bd;
+    --cl-white: #cfcad1;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0 100px;
+    position:relative;
+    background-color: var(--cl-white);
+    color: var(--cl-black);
+}
+
+.navbar{
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: auto;
+    height: 100px;
+}
+
+.nav-btn{
+    width: 100px;
+    height: 50px;
+    background-color: var(--cl-purple);
+    color: var(--cl-white);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
