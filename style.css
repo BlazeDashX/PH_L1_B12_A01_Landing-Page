@@ -1,7 +1,9 @@
 :root{
     --cl-black: #263238;
+    --cl-ash: rgb(118, 118, 118);
     --cl-white: #f4f4f4;
-    --cl-orange: #ff6a00;
+    --cl-orange: #ff8b25;
+    --cl-orange-light: #f0ecfa;
     --cl-blue: #00b8d4;
     --cl-blue-light: #cee8ec;
     --cl-yellow: #ffc857;
@@ -30,7 +32,7 @@ body{
 
 .navbar{
     width: 100%;
-    height: 150px;
+    height: 120px;
     padding: 0 10vw;
     display: flex;
     justify-content: space-between;
@@ -43,7 +45,7 @@ body{
 
 .logo{
     width: auto;
-    height: 100px;
+    height: 50px;
 }
 
 .nav-btn{
@@ -55,7 +57,7 @@ body{
     font-weight: 500;
     color: var(--cl-white);
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
 }
 
@@ -98,7 +100,7 @@ body{
     font-weight: 600;
     color: var(--cl-black);
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     margin-top: 50px;
 }
@@ -126,7 +128,7 @@ body{
 
 .action-text h3{
     font-family: 'Raleway', sans-serif;
-    font-size: 32px;
+    font-size: 42px;
     font-weight: 700;
     line-height: 1.2;
     text-align: left;
@@ -135,9 +137,9 @@ body{
 
 .action-text p{
     font-family: 'Raleway', sans-serif;
-    font-size: 16px;
+    font-size: 24px;
     font-weight: 400;
-    line-height: 1.5;
+    color: var(--cl-ash) ;
     text-align: left;
 }
 
@@ -150,7 +152,7 @@ body{
     font-weight: 600;
     color: var(--cl-black);
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     margin-top: 50px;
     align-items: left;
@@ -181,14 +183,14 @@ body{
     font-weight: 700;
     line-height: 1.2;
     text-align: center;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
 }
 
 .productive-card-section{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 0;
+    padding: 0 50px;
     width: 100%;
 }
 
@@ -248,7 +250,8 @@ body{
     width: 30%;
     padding: 20px;
     border-radius: 10px;
-    background-color: var(--cl-blue);
+    background-color: var(--cl-orange-light);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
 }
 
 .feedback-card .rating{
@@ -267,10 +270,11 @@ body{
     font-family: 'Raleway', sans-serif;
     font-size: 24px;
     font-weight: 700;
-    color: var();
     text-align: left;
     margin-top: 20px;
     margin-bottom: 10px;
+    
+    color: blueviolet;
 }
 
 .feedback-card-section p{
@@ -278,6 +282,7 @@ body{
     font-size: 16px;
     font-weight: 400;
     text-align: left;
+    
 }
 
 .feedback-card .user{
@@ -304,7 +309,7 @@ body{
     font-family: 'Raleway', sans-serif;
     font-size: 15px;
     font-weight: 400;
-    color: darkslategrey;
+    color: var(--cl-ash);
     text-align: left;
 }
 
@@ -323,7 +328,8 @@ body{
 .info h1{
     font-family: 'Raleway', sans-serif;
     font-size: 50px;
-    font-weight: 700;
+    font-weight: 800;
+    line-height: 1.2;
     text-align: center;
     padding-bottom: 20px;
 }
@@ -332,7 +338,7 @@ body{
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
     font-weight: 400;
-    color: rgb(118, 118, 118);
+    color: var(--cl-ash);
     text-align: center;
 }
 
@@ -345,13 +351,131 @@ body{
     font-weight: 600;
     color: var(--cl-black);
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     margin-top: 20px;
+}
+.info button:hover{
+    background-color: var(--cl-orange);
+    color: var(--cl-white);
+    border: 1px solid var(--cl-orange);
 }
 
 .info img{
     width: 100%;
     margin-top: 24px;
 }
+
+.get-in-touch{
+    width: 80%;
+    margin: 70px auto;
+    padding: 70px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.get-in-touch h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 100px;
+    font-weight: 700;
+    text-align: left;
+    width: 45%;
+    margin: 130px 0;
+    padding-bottom: 20px;
+}
+
+.get-in-touch .form{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.get-in-touch .form label{
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.get-in-touch .form input{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+
+.get-in-touch .form .field{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.get-in-touch .form .get-in-touch-btn{
+    width: 100%;
+    height: 50px;
+    background-color: var(--cl-yellow);
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--cl-black);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.get-in-touch .form .get-in-touch-btn:hover{
+    background-color: var(--cl-orange);
+    color: var(--cl-white);
+    border: 1px solid var(--cl-orange);
+}
+
+.footer{
+    background-color: var(--cl-black);
+    width: 100%;
+    padding: 70px 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer img{
+    height: 120px;
+    width: auto;
+    margin-bottom: 24px;
+}
+
+.footer p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--cl-white);
+    text-align: center;
+}
+
+.footer .link{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px; 
+    margin-top: 20px;
+}
+
+.footer .link a{
+    color: var(--cl-yellow);
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
 
